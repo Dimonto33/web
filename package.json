@@ -1,8 +1,8 @@
 {
-  "title": "Modern Business",
+  "title": "Brujos y Santeros",
   "name": "startbootstrap-modern-business",
   "version": "4.1.2",
-  "description": "A multipurpose HTML website template built with Bootstrap",
+  "description": "Pagina web de consultas",
   "keywords": [
     "css",
     "sass",
@@ -16,11 +16,6 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business/issues",
     "email": "feedback@startbootstrap.com"
   },
-  "license": "MIT",
-  "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BlackrockDigital/startbootstrap-modern-business.git"
