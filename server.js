@@ -1,7 +1,41 @@
-console.log("estoy funcionando al pelo");
+const express = require('express');
+const app = express();//start an express app
+const path = require('path');
+const router = express.Router();
 
-var http = require('http');
-var app = require('./app');
+//static files
+app.use(express.static('public'));
 
-http.createServer(app.handleRequest).listen(8080);
-console.log("server is now runing")
+
+// router
+router.get('/',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/index.html"));
+});
+router.get('/adivinacion',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Adivinacion.html"));
+});
+router.get('/amor',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Amor.html"));
+});
+router.get('/politicas',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Politicas.html"));
+});
+router.get('/salud',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Salud.html"));
+});
+router.get('/suerte',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Suerte.html"));
+});
+router.get('/dinero',(request, response) =>{
+  response.sendFile(path.join(__dirname, "/public/Dinero.html"));
+});
+
+
+
+
+
+app.use("/", router);
+
+app.listen(8080, () =>{
+  console.log("server is now runing in port 8080")
+});
