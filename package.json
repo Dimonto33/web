@@ -33,5 +33,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "main": "app.js"
+  "main": "app.js",
+  "author": "alejandro uribe",
+  "license": "ISC"
 }
